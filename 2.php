@@ -40,9 +40,9 @@
     		</td>
     	</tr>
     	<tr> <nav></nav>
-    		<td><?php echo $user[0];?> </td>
+    		<td><?php echo strval($user[0]);?> </td>
     		<td><?php echo floatval($usia);?> </td>
-    		<td><?php echo $user[2];?> </td>
+    		<td><?php echo strval($user[2]);?> </td>
     	</tr>
     </table>
 
