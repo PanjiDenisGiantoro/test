@@ -1,0 +1,5 @@
+select nm_film,artis.bayaran from film join artis on film.artis = artis.kd_artis order by artis.bayaran asc
+select nm_film from film where nm_film LIKE 'J%'
+SELECT count(film.nm_film) as jumlah_film,produser.nm_produser as nama_produser FROM film 
+JOIN produser ON film.produser=produser.kd_produser GROUP by produser.nm_produser
+SELECT nm_artis from film join artis on film.artis = artis.kd_artis join genre on genre.kd_genre = film.genre where genre.nm_genre='ACTION'
